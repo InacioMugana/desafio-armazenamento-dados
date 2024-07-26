@@ -14,6 +14,10 @@ const userSchema = mongoose.Schema(
       type: String,
       required: [true, "Por favor, introduza o seu password"],
     },
+    passwordConfirmation: {
+      type: String,
+      required: [true, "Por favor, introduza o seu password de confirmação"],
+    },
   },
   {
     timestamps: true,

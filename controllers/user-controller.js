@@ -21,6 +21,7 @@ const signup = asyncHandler(async (req, res) => {
     name: req.body.name,
     email: req.body.email,
     password: req.body.password,
+    passwordConfirmation: req.body.passwordConfirmation,
   });
 
   res.status(201).json({ message: "Usuario criado com sucesso!", data: users });
